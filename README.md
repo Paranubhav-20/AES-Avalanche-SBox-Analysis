@@ -1,4 +1,4 @@
-\# Avalanche Effect Analysis Of Static and Dynamic S-Box in AES Encryption
+Avalanche Effect Analysis Of Static and Dynamic S-Box in AES Encryption
 
 
 
