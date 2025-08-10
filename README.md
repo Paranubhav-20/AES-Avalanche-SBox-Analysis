@@ -103,4 +103,4 @@ We compare **static** and **dynamic** S-Boxes to evaluate their performance in a
 Full-Stack Developer | Cryptography Enthusiast  
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/Paranubhav-20)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](www.linkedin.com/in/paranubhav)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/paranubhav26/)
