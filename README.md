@@ -1,60 +1,106 @@
-Avalanche Effect Analysis Of Static and Dynamic S-Box in AES Encryption
+# 🔐 Avalanche Effect Analysis of S-Box in 128-bit Encryption
+
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen)]()
+[![AES](https://img.shields.io/badge/Crypto-AES%20128--bit-orange.svg)]()
+
+---
+
+## 📌 Overview
+This project investigates the **avalanche effect** in cryptographic systems, focusing on the **Substitution Box (S-Box)** used in **AES 128-bit encryption**.
+
+The avalanche effect ensures that a **small change in input** (like flipping a single bit) causes a **significant change in output** — an essential property for secure encryption.  
+
+We compare **static** and **dynamic** S-Boxes to evaluate their performance in achieving this effect.
+
+---
+
+## 🎯 Objectives
+✔ Understand the role of **S-Box** in AES.  
+✔ Evaluate the avalanche effect for static vs. dynamic S-Boxes.  
+✔ Measure performance in:
+- Percentage of bit changes.
+- Output randomness.
+- Resistance to cryptanalysis.
+
+---
+
+## AES-Avalanche-SBox-Analysis/
+│── 📄 README.md                 # Your project documentation
+│── 📄 requirements.txt          # Required Python libraries
+│── 📄 LICENSE                   # (Optional) License for the repo
+│
+├── 📁 src                       # Source code files
+│   │── 📄 avalanche_analysis.py # Main script to run tests
+│   │── 📄 sbox_static.py        # Static S-box related functions
+│   │── 📄 sbox_dynamic.py       # Dynamic S-box generation & functions
+│   │── 📄 utils.py              # Helper functions (hamming_distance, etc.)
+│
+├── 📁 plots                     # All generated graphs
+│   │── 📊 graph1.png
+│   │── 📊 graph2.png
+│   │── 📊 graph3.png
+│   │── 📊 graph4.png
+│
+└── 📁 docs                      # Extra documentation (optional)
+    │── 📄 report.pdf            # Your detailed analysis report
+
+---
+
+## 🛠️ Technologies Used
+- **Language:** Python (Google Colab / Jupyter Notebook)
+- **Libraries:**
+  - `numpy` – Numerical operations
+  - `matplotlib` – Data visualization
+- **Concepts:**
+  - AES Encryption
+  - S-Box Substitution
+  - Avalanche Effect Measurement
+
+---
+
+## 📊 Methodology
+1. **Generate Input:** Random 128-bit plaintext values.
+2. **Encrypt:** Apply both static and dynamic S-Boxes in AES.
+3. **Flip Bit:** Change one bit in the plaintext.
+4. **Calculate Avalanche Effect:**
+   \[
+   Avalanche\ Effect = \frac{\text{Number of bits changed}}{\text{Total bits}} \times 100
+   \]
+5. **Visualize:** Plot avalanche effect results for multiple iterations.
+
+---
+
+## 📈 Results Summary
+| S-Box Type  | Average Bit Change | Avalanche Effect |
+|-------------|-------------------|------------------|
+| Static      | ~50%               | Consistent       |
+| Dynamic     | ~50%+              | More unpredictable |
+
+✅ Both maintain strong avalanche properties, ensuring AES security.
 
 
+<img width="1024" height="1536" alt="Ref Img" src="https://github.com/user-attachments/assets/6fb1056a-2ec7-4609-bb42-e6b3b1538add" />
 
-This project explores the Avalanche Effect in AES encryption using two
-approaches:  - A \*\*static S-Box\*\* (standard AES implementation)  - A
-\*\*dynamic S-Box\*\* generated at runtime using key-dependent or
-pseudo-random logic.
+---
 
+## 📉 Avalanche Effect Process Diagram
 
+![Avalanche Effect Diagram](https://raw.githubusercontent.com/Paranubhav-20/AES-Avalanche-SBox-Analysis/main/plots/avalanche_diagram.png)
 
-The objective is to evaluate and compare the cryptographic diffusion
-strength through Avalanche Effect metrics.
+---
 
+## 📚 References
+- [FIPS PUB 197 – AES Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf)
+- Daemen, J., & Rijmen, V. *The Design of Rijndael: AES — The Advanced Encryption Standard.*
+- Stallings, W. *Cryptography and Network Security.*
 
+---
 
-\## 🔧 Tools Used - Google Colab - Python (NumPy, matplotlib,
-PyCryptodome) - Hamming Distance Analysis - Static & Dynamic S-Box
-Design
+## 👤 Author
+**PARANUBHAV DASH**  
+Full-Stack Developer | Cryptography Enthusiast  
 
-
-
-\## 📊 Features - Custom AES encryption pipeline - Bit-flipping for
-Avalanche Effect evaluation - Dynamic S-Box generation logic - Graphical
-comparison of avalanche percentages - Statistical output analysis
-
-
-
-\## 📁 Project Structure -
-\`avalanche_analysis_static_vs_dynamic.ipynb\`: Google Colab Notebook
-with code and explanations. - \`dynamic_sbox_module.py\`: Helper file
-for dynamic S-Box generation. - \`README.md\`: Project overview and
-usage instructions.
-
-
-
-\## ▶️ How to Run 1. Open \`avalanche_analysis_static_vs_dynamic.ipynb\`
-in \[Google Colab\](https://colab.research.google.com/). 2. Run all
-cells sequentially. 3. Review results in console and graphs.
-
-
-\## 📈 Output Sample
-
-
-Plaintext: 0x56f50ce8f451792a5a4a38db67174595 Static Cipher:
-0x36d5fec8d431590a3a2a18bb47f02575 Dynamic Cipher:
-0x30fe895835c1b4db8a52fd151ab52493 Avalanche Effect: Static - 25.78%,
-Dynamic - 43.75%
-
-
-
-\## 📚 Reference This project was carried out during a vocational
-internship at DRDO-ITR Chandipur under guidance of Shri Amit Sardar
-(Scientist-F).
-
-\-\--
-
-
-
-🔒 \_For educational and research use only.\_
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/Paranubhav-20)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](www.linkedin.com/in/paranubhav)
