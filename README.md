@@ -27,6 +27,7 @@ We compare **static** and **dynamic** S-Boxes to evaluate their performance in a
 ---
 
 ## AES-Avalanche-SBox-Analysis/
+```
 │── 📄 README.md                 # Your project documentation
 │── 📄 requirements.txt          # Required Python libraries
 │── 📄 LICENSE                   # (Optional) License for the repo
@@ -47,6 +48,7 @@ We compare **static** and **dynamic** S-Boxes to evaluate their performance in a
     │── 📄 report.pdf            # Your detailed analysis report
 
 ---
+```
 
 ## 🛠️ Technologies Used
 - **Language:** Python (Google Colab / Jupyter Notebook)
