@@ -86,11 +86,6 @@ We compare **static** and **dynamic** S-Boxes to evaluate their performance in a
 
 ---
 
-## 📉 Avalanche Effect Process Diagram
-
-![Avalanche Effect Diagram](https://raw.githubusercontent.com/Paranubhav-20/AES-Avalanche-SBox-Analysis/main/plots/avalanche_diagram.png)
-
----
 
 ## 📚 References
 - [FIPS PUB 197 – AES Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf)
