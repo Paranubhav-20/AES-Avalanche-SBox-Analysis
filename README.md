@@ -47,7 +47,6 @@ We compare **static** and **dynamic** S-Boxes to evaluate their performance in a
 └── 📁 docs                      # Extra documentation (optional)
     │── 📄 report.pdf            # Your detailed analysis report
 
----
 ```
 
 ## 🛠️ Technologies Used
